@@ -1,0 +1,43 @@
+:root {
+  /*prymary*/
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+  /*neutral*/
+  --Light-Grayish-Cyan: hsl(180, 52%, 96%);
+  --Light-Grayish-Cyan2: hsl(180, 31%, 95%);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--Dark-Grayish-Cyan);
+  font-size: 15px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: var(--Desaturated-Dark-Cyan);
+  background-size: contain;
+}
+
+.headerImg {
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+section {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin: 600px auto;
+}

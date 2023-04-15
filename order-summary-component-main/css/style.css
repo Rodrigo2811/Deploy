@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/images/pattern-background-desktop.svg);
+  font-family: "Red Hat Display", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container-principal {
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 500px;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: hsl(225, 100%, 98%);
+  border-radius: 20px;
+}
+.container-principal .container-img {
+  width: 100%;
+  background-image: url(/images/illustration-hero.svg);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.container-principal .subcontainer {
+  margin: 20px auto;
+  width: 250px;
+  height: 70px;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-principal .title {
+  text-align: center;
+  margin: 15px auto;
+  font-size: 14px;
+}
+.container-principal .paragrafo {
+  text-align: center;
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+  margin: 10px 15px;
+}
+.container-principal a {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+.container-principal .footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container-principal button {
+  width: 250px;
+  height: 40px;
+  padding: 5px;
+  background: hsl(245, 75%, 52%);
+  margin: 5px auto;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+.container-principal button:hover {
+  background: hsl(224, 23%, 55%);
+}
+.container-principal a {
+  margin: 5px auto;
+  font-size: 12px;
+}
+.container-principal a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 312px) {
+  .container-principal {
+    width: 100%;
+    height: auto;
+    margin: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
