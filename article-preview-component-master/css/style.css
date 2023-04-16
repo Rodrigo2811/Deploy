@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(212, 23%, 69%);
+}
+
+.container {
+  width: 650px;
+  height: 250px;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  margin: 20px auto;
+  background: hsl(210, 46%, 95%);
+}
+
+.container-img {
+  width: 40%;
+  height: auto;
+}
+
+.sub-info {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(210, 46%, 95%);
+  padding: 5px;
+}
+
+.img-info {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.img-principal {
+  width: 100%;
+  height: 100%;
+}
+
+.container-info {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.container-info h3 {
+  color: hsl(217, 19%, 35%);
+}
+.container-info span {
+  color: hsl(214, 17%, 51%);
+  font-size: 12px;
+  margin: 10px auto;
+}
+
+.info-detalhes {
+  margin-left: -125px;
+  font-size: 12px;
+}
+
+div > p {
+  color: hsl(217, 19%, 35%);
+}
+
+button {
+  background: hsl(212, 23%, 69%);
+  padding: 5px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+.share {
+  width: 200px;
+  height: auto;
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  margin: -75px -105px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  visibility: hidden;
+}
+.share h4 {
+  width: 60px;
+  letter-spacing: 2px;
+  color: hsl(212, 23%, 69%);
+  font-size: 12px;
+}
+
+.rede-social img {
+  margin: 5px;
+}
+
+.triangulo {
+  position: relative;
+  transform: translate(-60px, 35px);
+}
+
+#triangulo-para-baixo {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid hsl(217, 19%, 35%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 375px;
+    height: auto;
+    display: block;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .container-img {
+    width: 100%;
+    height: auto;
+  }
+  .container-info {
+    width: 100%;
+  }
+  .share {
+    width: 100%;
+    height: 67px;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    margin: -17px -350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    visibility: visible;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .share h4 {
+    width: 60px;
+    letter-spacing: 2px;
+    color: hsl(212, 23%, 69%);
+    font-size: 12px;
+    margin-left: -100px;
+  }
+  .triangulo {
+    display: none;
+  }
+  .btn-share {
+    position: absolute;
+    margin-left: -70px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
