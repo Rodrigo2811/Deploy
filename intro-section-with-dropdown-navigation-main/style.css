@@ -6,7 +6,7 @@
 
 body {
   background-color: hsl(0, 0%, 98%);
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   overflow-y: hidden;
 }
 
@@ -14,14 +14,12 @@ nav {
   margin: 10px auto;
   width: 100%;
   display: inline-flex;
-
 }
 
 .container-nav {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-
 }
 
 .containerLogo {
@@ -46,7 +44,6 @@ nav {
   padding: 0 5px;
   margin-right: 40px;
 }
-
 
 #btnLogin {
   border: none;
@@ -73,7 +70,6 @@ nav {
   color: hsl(0, 0%, 41%);
 }
 
-
 #btnRegistrar:hover {
   color: hsl(0, 0%, 8%);
 }
@@ -90,12 +86,10 @@ h1 {
   width: 400px;
 }
 
-
 article {
   display: flex;
   padding: 20px auto;
 }
-
 
 .container-left {
   width: 60%;
@@ -108,20 +102,14 @@ article {
   margin: 20px auto;
 }
 
-
-
-
 .img-mobile {
   display: none;
 }
-
 
 .container-imgGrande img {
   width: auto;
   height: 40%;
 }
-
-
 
 .btn-learmMore {
   padding: 10px;
@@ -164,7 +152,6 @@ article {
   width: 10px;
 }
 
-
 /* Menu mobile */
 
 .container-sanduiche {
@@ -181,7 +168,6 @@ article {
   height: 50px;
 }
 
-
 .linha {
   width: 30px;
   height: 3px;
@@ -190,10 +176,8 @@ article {
   display: block;
   transform-origin: center;
   position: relative;
-  transition: .3s;
-
+  transition: 0.3s;
 }
-
 
 .menu-mobile {
   display: none;
@@ -206,9 +190,7 @@ article {
   font-size: 16pt;
   background-color: white;
   transform: translate(310px, 10px);
-
 }
-
 
 .menu-mobile .nav-pills {
   display: none;
@@ -218,25 +200,20 @@ article {
 /* Responsividade*/
 
 @media screen and (max-width: 575px) {
-
-
   body {
     padding: 0;
     margin: 0;
     overflow: hidden;
-
   }
 
   .container-sanduiche {
     height: 50px;
     display: block;
     visibility: visible;
-    transition: .5s;
+    transition: 0.5s;
     overflow: hidden;
     transform: translate(-10px, -30px);
-
   }
-
 
   .nav-pills {
     visibility: hidden;
@@ -246,7 +223,6 @@ article {
   .containerAcesso-mobile {
     display: block;
     margin: 100px 30px;
-
   }
 
   .containerAcesso {
@@ -265,33 +241,25 @@ article {
   .container-imgGrande {
     width: 375px;
     height: 300px;
-
   }
 
   .container-imgDesktop {
     display: none;
   }
 
-
   .container-imgGrande img {
     width: 100%;
     height: 100%;
   }
 
-
-
   .container-imgMobile img {
     width: 100%;
     height: auto;
-
   }
-
-
 
   .img-mobile {
     display: block;
   }
-
 
   .container-left {
     width: 100%;
@@ -315,7 +283,6 @@ article {
 
   .container-paragrafo button {
     margin: auto 110px;
-
   }
 
   .container-icones {
@@ -333,7 +300,7 @@ article {
 
   .menu-mobile.abrir {
     visibility: visible;
-    transition: .3s;
+    transition: 0.3s;
     width: 260px;
     margin: 0 auto;
     display: block;
@@ -355,16 +322,13 @@ article {
 
   .container-sanduiche.ativo .linha:nth-child(3) {
     transform: translateY(-9px) rotate(45deg);
-
   }
 
   .container-paragrafo p {
-
     width: 100%;
     font-size: 14px;
     text-align: justify;
     padding: 15px;
-
   }
 
   .btn-fechaMenu {
@@ -381,7 +345,6 @@ article {
     margin: 9px 5px;
     display: block;
     position: relative;
-
   }
 
   .btn-fechaMenu .cruz:nth-child(1) {
@@ -395,5 +358,30 @@ article {
   .img-Desktop {
     display: none;
   }
+  #btnLogin-mobile {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+    width: 100px;
+    height: 40px;
+  }
+  #btnLogin-mobile:hover {
+    color: hsl(0, 0%, 8%);
+  }
 
+  #btnRegistrar-mobile {
+    width: 120px;
+    height: 50px;
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: 15px;
+    /* margin-left: 10px; */
+    padding: 10px 5px;
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+  }
+  #btnRegistrar-mobile:hover {
+    color: hsl(0, 0%, 8%);
+  }
 }
