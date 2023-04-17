@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 header {
@@ -19,8 +19,6 @@ header {
   background-image: url(../images/bg-pattern-intro-right-desktop.svg);
   background-repeat: no-repeat;
   background-position: right;
-
-
 }
 
 nav {
@@ -42,7 +40,6 @@ nav ul {
   align-items: center;
   justify-content: space-around;
   z-index: 1;
-
 }
 
 nav ul li {
@@ -51,7 +48,6 @@ nav ul li {
   justify-content: space-between;
   padding: 10px;
   cursor: pointer;
-
 }
 
 nav a {
@@ -67,13 +63,13 @@ nav li a {
   border: 1px solid hsl(256, 26%, 20%);
   background-color: transparent;
   cursor: pointer;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-view:hover {
   background-color: hsl(256, 26%, 20%);
   color: white;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .container-text {
@@ -82,15 +78,11 @@ nav li a {
   width: 480px;
   height: auto;
   margin-left: 100px;
-
 }
 
 .nav-mobile {
   display: none;
-
 }
-
-
 
 .border {
   border-bottom: 1px solid hsl(216, 30%, 68%);
@@ -103,13 +95,11 @@ section .border {
   margin: 0 175px;
 }
 
-
 .container-text h1 {
   margin: 20px 0;
   width: 330px;
   font-weight: 700;
   font-size: 2.6rem;
-
 }
 
 .container-text p {
@@ -123,14 +113,13 @@ section .border {
   padding: 10px;
   color: white;
   cursor: pointer;
-  transition: .3s ease-in-out;
-
+  transition: 0.3s ease-in-out;
 }
 
 .container-text button:hover {
   background-color: white;
   color: black;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .container-imgHeader {
@@ -148,7 +137,6 @@ section .border {
   position: relative;
 }
 
-
 section h2 {
   font-size: 3rem;
   margin: 50px 170px;
@@ -157,7 +145,6 @@ section h2 {
 .img-direita {
   margin: -100px auto;
   width: 100px;
-
 }
 
 .container-different {
@@ -216,15 +203,13 @@ section h2 {
   color: white;
   border: 1px solid white;
   cursor: pointer;
-  transition: .3s ease-in-out;
-
+  transition: 0.3s ease-in-out;
 }
 
 .container3 button:hover {
   background-color: white;
   color: black;
-  transition: .3s ease-in-out;
-
+  transition: 0.3s ease-in-out;
 }
 
 footer {
@@ -233,15 +218,12 @@ footer {
   background-image: url(../images/bg-pattern-footer-desktop.svg);
   background-color: hsl(0, 0%, 98%);
   background-repeat: no-repeat;
-  margin-top: 200px;
-
-
-
+  margin-top: 400px;
 }
 
 .footer2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 200px auto;
 }
 
@@ -274,7 +256,6 @@ footer {
   padding: 20px;
   position: relative;
   z-index: 1;
-
 }
 
 .cabecalho-footer img {
@@ -295,14 +276,11 @@ footer {
 .container-sanduiche svg {
   cursor: pointer;
   display: none;
-
 }
 
 .logo-mobile {
   display: none;
-
 }
-
 
 .intro-left {
   display: none;
@@ -311,7 +289,6 @@ footer {
 .intro-right {
   display: none;
 }
-
 
 .btn-abrir {
   display: none;
@@ -322,8 +299,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
-
   .img-tablet {
     display: none;
   }
@@ -346,18 +321,13 @@ footer {
   .container3 h3 {
     width: auto;
   }
-
 }
 
 @media screen and (max-width: 475px) {
-
-
-
   header {
     background-image: url(../images/bg-pattern-intro-left-mobile.svg);
     background-position: left;
     background-size: cover;
-
   }
 
   .img-direita {
@@ -366,14 +336,11 @@ footer {
 
   nav ul {
     display: none;
-
   }
 
   .container-imgHeader img {
     display: none;
   }
-
-
 
   .container-sanduiche svg {
     display: block;
@@ -457,7 +424,6 @@ footer {
     margin: 20px auto;
   }
 
-
   .intro-left {
     display: block;
   }
@@ -466,20 +432,16 @@ footer {
     display: block;
   }
 
-
   .container3 button {
-    Position: absolute;
+    position: absolute;
     display: block;
     left: 14%;
     margin: 100px 90px;
-
-
   }
 
   .logo-mobile {
     display: block;
     width: 100%;
-
   }
 
   .nav-mobile {
@@ -491,15 +453,12 @@ footer {
     background-size: contain;
     height: 100vh;
     display: none;
-
   }
-
 
   .nav-mobile ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
   }
 
   .nav-mobile ul li a {
@@ -519,6 +478,4 @@ footer {
   .btn-abrir {
     display: block;
   }
-
-
 }
