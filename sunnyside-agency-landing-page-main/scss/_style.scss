@@ -31,10 +31,13 @@ header {
   height: 700px;
   display: block;
   padding-top: 30px;
+
+  img {
+    padding-left: 30px;
+  }
 }
 
 .logo {
-  padding-left: 20px;
   width: auto;
   height: 30px;
 }
@@ -47,7 +50,7 @@ nav {
 
   a {
     text-decoration: none;
-    margin-right: 20px;
+    margin: 15px 30px;
     color: $White;
   }
 }
@@ -65,6 +68,10 @@ h1 {
   padding: 10px;
   border-radius: 20px;
   font-weight: 500;
+}
+
+.btn-contact:hover {
+  background: $Yellow;
 }
 
 .container-secao {
@@ -92,10 +99,17 @@ h1 {
     a {
       justify-items: flex-start;
       width: 60%;
+      text-decoration: none;
     }
   }
   img {
     width: 100%;
+  }
+
+  .learn-secao1:hover {
+    text-decoration-style: bold;
+    text-decoration-line: underline;
+    text-decoration-color: yellow;
   }
 }
 .container-text {
@@ -117,4 +131,72 @@ h1 {
   }
 }
 .container-client {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  h4 {
+    text-align: center;
+  }
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+.container-client img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.container-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 70px 130px;
+}
+
+.card-client {
+  display: grid;
+  grid-template-columns: 290px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-imagens {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+footer {
+  background: $Darkmoderatecyan-footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin: 30px auto;
+  }
+
+  .nav-footer {
+    display: flex;
+
+    a {
+      color: $Dark-desaturated-cyan-graphic-design-text;
+    }
+  }
+  a:hover {
+    color: $White;
+  }
+}
+.container-redes-sociais a {
+  margin: 10px 10px;
 }
