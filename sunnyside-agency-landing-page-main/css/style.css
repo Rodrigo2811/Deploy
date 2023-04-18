@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+header {
+  background-image: url(/images/desktop/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  display: block;
+  padding-top: 30px;
+}
+
+.logo {
+  padding-left: 20px;
+  width: auto;
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+h1 {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  margin-top: 100px;
+}
+
+.img-arow {
+  margin: 110px 650px 10px;
+}
+
+.btn-contact {
+  background: hsl(0, 0%, 100%);
+  color: hsl(198, 62%, 26%);
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.container-secao {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: -3px;
+}
+.container-secao .secao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-secao .secao h2 {
+  width: 30%;
+  margin-bottom: 15px;
+  margin-right: 200px;
+}
+.container-secao .secao p {
+  width: 60%;
+  margin-bottom: 15px;
+}
+.container-secao .secao a {
+  justify-items: flex-start;
+  width: 60%;
+}
+.container-secao img {
+  width: 100%;
+}
+
+.container-text {
+  position: relative;
+  transform: translate(0, -150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+  transform: translate(200px, -200px);
+}
+.container-text h3 {
+  margin-bottom: 10px;
+}
+.container-text p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
