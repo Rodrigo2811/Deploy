@@ -7,6 +7,10 @@
   outline: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-image: url(/images/desktop/image-header.jpg);
   background-size: cover;
@@ -49,14 +53,16 @@ h1 {
 
 .btn-contact {
   background: hsl(0, 0%, 100%);
-  color: hsl(198, 62%, 26%);
+  color: hsl(167, 40%, 24%);
   padding: 10px;
   border-radius: 20px;
   font-weight: 500;
+  transition: 0.6s;
+  font-size: 12px;
 }
 
 .btn-contact:hover {
-  background: hsl(51, 100%, 49%);
+  background: hsl(210, 4%, 67%);
 }
 
 .container-secao {
@@ -72,9 +78,11 @@ h1 {
   align-items: center;
 }
 .container-secao .secao h2 {
-  width: 30%;
+  width: 35%;
   margin-bottom: 15px;
-  margin-right: 200px;
+  margin-right: 170px;
+  font-weight: 700;
+  font-family: "Fraunces", sans-serif;
 }
 .container-secao .secao p {
   width: 60%;
@@ -84,6 +92,9 @@ h1 {
   justify-items: flex-start;
   width: 60%;
   text-decoration: none;
+  font-size: 13px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
 }
 .container-secao img {
   width: 100%;
@@ -91,7 +102,12 @@ h1 {
 .container-secao .learn-secao1:hover {
   text-decoration-style: bold;
   text-decoration-line: underline;
-  text-decoration-color: yellow;
+  text-decoration-color: hsl(51, 100%, 49%);
+}
+.container-secao .learn-secao2:hover {
+  text-decoration-style: bold;
+  text-decoration-line: underline;
+  text-decoration-color: hsl(7, 99%, 70%);
 }
 
 .container-text {
@@ -117,11 +133,14 @@ h1 {
   align-items: center;
   margin-bottom: 30px;
 }
-.container-client h4 {
+.container-client h3 {
   text-align: center;
+  color: hsl(210, 4%, 67%);
+  letter-spacing: 5px;
 }
 .container-client p {
   margin-bottom: 50px;
+  color: hsl(213, 9%, 39%);
 }
 
 .container-client img {
@@ -143,6 +162,10 @@ h1 {
   justify-items: center;
   align-items: center;
   text-align: center;
+}
+.card-client small {
+  color: hsl(210, 4%, 67%);
+  margin-top: 10px;
 }
 
 .container-imagens {
@@ -168,14 +191,26 @@ footer .nav-footer {
   display: flex;
 }
 footer .nav-footer a {
-  color: hsl(167, 40%, 24%);
+  color: hsl(210, 4%, 67%);
 }
-footer a:hover {
+footer .nav-footer a:hover {
   color: hsl(0, 0%, 100%);
 }
-
-.container-redes-sociais a {
-  margin: 10px 10px;
+footer .container-redes-sociais i,
+footer svg,
+footer path {
+  margin: 30px 5px;
+}
+footer .container-redes-sociais i i,
+footer .container-redes-sociais i svg,
+footer .container-redes-sociais i path:hover,
+footer svg i,
+footer svg svg,
+footer svg path:hover,
+footer path i,
+footer path svg,
+footer path path:hover {
+  fill: hsl(0, 0%, 100%);
 }
 
 /*# sourceMappingURL=style.css.map */

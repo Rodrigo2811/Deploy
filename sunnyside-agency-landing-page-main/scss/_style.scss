@@ -23,6 +23,10 @@ $White: hsl(0, 0%, 100%);
   outline: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-image: url(/images/desktop/image-header.jpg);
   background-size: cover;
@@ -64,14 +68,16 @@ h1 {
 }
 .btn-contact {
   background: $White;
-  color: $Darkblue-photography-text;
+  color: $Dark-desaturated-cyan-graphic-design-text;
   padding: 10px;
   border-radius: 20px;
   font-weight: 500;
+  transition: 0.6s;
+  font-size: 12px;
 }
 
 .btn-contact:hover {
-  background: $Yellow;
+  background: $Grayish-blue;
 }
 
 .container-secao {
@@ -87,9 +93,11 @@ h1 {
     align-items: center;
 
     h2 {
-      width: 30%;
+      width: 35%;
       margin-bottom: 15px;
-      margin-right: 200px;
+      margin-right: 170px;
+      font-weight: 700;
+      font-family: "Fraunces", sans-serif;
     }
 
     p {
@@ -100,6 +108,9 @@ h1 {
       justify-items: flex-start;
       width: 60%;
       text-decoration: none;
+      font-size: 13px;
+      font-family: "Barlow", sans-serif;
+      font-weight: 400;
     }
   }
   img {
@@ -109,7 +120,12 @@ h1 {
   .learn-secao1:hover {
     text-decoration-style: bold;
     text-decoration-line: underline;
-    text-decoration-color: yellow;
+    text-decoration-color: $Yellow;
+  }
+  .learn-secao2:hover {
+    text-decoration-style: bold;
+    text-decoration-line: underline;
+    text-decoration-color: $Soft-red;
   }
 }
 .container-text {
@@ -136,11 +152,14 @@ h1 {
   align-items: center;
   margin-bottom: 30px;
 
-  h4 {
+  h3 {
     text-align: center;
+    color: $Grayish-blue;
+    letter-spacing: 5px;
   }
   p {
     margin-bottom: 50px;
+    color: $Very-dark-grayish-blue;
   }
 }
 
@@ -163,6 +182,11 @@ h1 {
   justify-items: center;
   align-items: center;
   text-align: center;
+
+  small {
+    color: $Grayish-blue;
+    margin-top: 10px;
+  }
 }
 
 .container-imagens {
@@ -190,13 +214,21 @@ footer {
     display: flex;
 
     a {
-      color: $Dark-desaturated-cyan-graphic-design-text;
+      color: $Grayish-blue;
+    }
+    a:hover {
+      color: $White;
     }
   }
-  a:hover {
-    color: $White;
+  .container-redes-sociais i,
+  svg,
+  path {
+    margin: 30px 5px;
+
+    i,
+    svg,
+    path:hover {
+      fill: $White;
+    }
   }
-}
-.container-redes-sociais a {
-  margin: 10px 10px;
 }
