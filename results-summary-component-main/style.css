@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+  --Primary-Light-red: hsl(0, 100%, 67%);
+  --primary-Orangey-yellow: hsl(39, 100%, 56%);
+  --Primary-Green-teal: hsl(166, 100%, 37%);
+  --Primary-Cobalt-blue: hsl(234, 85%, 45%);
+
+  --Gradient-Lights-late-blue-background: hsl(252, 100%, 67%);
+  --Gradient-Light-royal-blue-background: hsl(241, 81%, 54%);
+  --Gradient-Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Gradient-Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  --Neutral-White: hsl(0, 0%, 100%);
+  --Neutral-Pale-blue: hsl(221, 100%, 96%);
+  --Neutral-Light-lavender: hsl(241, 100%, 89%);
+  --Neutral-Dark-gray-blue: hsl(224, 30%, 27%);
+
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+.container {
+  width: 500px;
+  height: 350px;
+  background-color: var(--Neutral-White);
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px 5px var(--Neutral-Pale-blue);
+}
+
+.container-left {
+  height: 350px;
+  width: 70%;
+  background-image: linear-gradient(var(--Gradient-Lights-late-blue-background),
+      var(--Gradient-Light-royal-blue-background));
+  border-radius: 30px;
+  color: var(--Neutral-White);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circulo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-image: linear-gradient(var(--Gradient-Violet-blue-circle), var(--Gradient-Persian-blue-circle));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-info {
+  margin: 20px auto;
+  color: var(--Neutral-Light-lavender);
+}
+
+.sub-titulo {
+  margin: 20px auto;
+
+
+}
+
+.description {
+  text-align: center;
+  width: 70%;
+  font-size: 12px;
+  color: var(--Neutral-Light-lavender);
+}
+
+.circulo h2 {
+  font-size: 45px;
+}
+
+.circulo p {
+  font-size: 12px;
+  color: var(--Neutral-Light-lavender);
+}
+
+.container-right {
+  height: 400px;
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-right h4 {
+  width: 80%;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.info {
+  width: 80%;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px auto;
+  border-radius: 5px;
+}
+
+.info-reaction {
+  background-color: hsl(0, 100%, 67%, 0.10);
+}
+
+.info-memory {
+  background-color: hsl(0, 100%, 67%, 0.10);
+}
+
+.info-verbal {
+  background-color: hsl(0, 100%, 67%, 0.10);
+}
+
+.info-visual {
+  background-color: hsl(0, 100%, 67%, 0.10);
+}
+
+button {
+  width: 80%;
+  border-radius: 30px;
+  height: 40px;
+  background-color: var(--Neutral-Dark-gray-blue);
+  border: none;
+  color: var(--Neutral-White);
+  margin-top: 25px;
+  cursor: pointer;
+
+}
+
+button:hover {
+
+  background-image: linear-gradient(var(--Gradient-Lights-late-blue-background), var(--Gradient-Light-royal-blue-background));
+}
+
+.detalhes {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  margin: 0 20px;
+  font-size: 12px;
+}
+
+.detalhes-reaction {
+  color: var(--Primary-Light-red);
+
+}
+
+.detalhes-memory {
+  color: var(--primary-Orangey-yellow);
+
+}
+
+.detalhes-verbal {
+  color: var(--Primary-Green-teal);
+}
+
+.detalhes-visual {
+  color: var(--Primary-Cobalt-blue);
+
+}
+
+.porcentagem {
+  width: 30%;
+  font-size: 10px;
+}
+
+.porcent {
+  font-size: 12px;
+  color: var(--Neutral-Dark-gray-blue);
+}
+
+
+/* Responsividade mobile */
+
+
+@media screen and (max-width: 460px) {
+
+
+
+  .container {
+    width: 350px;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .container-left {
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-right {
+    height: 400px;
+    width: 100%;
+
+  }
+
+  .info {
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px auto;
+    border-radius: 5px;
+  }
+
+  .container-right h4 {
+    font-size: 18px;
+  }
+
+  .detalhes {
+
+    font-size: 18px;
+  }
+
+  .porcentagem {
+    width: 10%;
+    font-size: 18px;
+  }
+
+  .description {
+    width: 70%;
+    font-size: 18px;
+    margin-top: 20px;
+
+  }
+
+}
