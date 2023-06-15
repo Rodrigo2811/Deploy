@@ -202,14 +202,14 @@ button:hover {
 
   .container {
     width: 350px;
-    height: 850px;
+    height: 730px;
     display: flex;
     flex-direction: column;
     margin: auto;
   }
 
   .container-left {
-    height: 400px;
+    height: 350px;
     width: 350px;
     display: flex;
     flex-direction: column;
