@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -20,9 +21,7 @@ header {
   display: block;
   padding-top: 30px;
 }
-header img {
-  padding-left: 30px;
-}
+
 
 .logo {
   width: auto;
@@ -35,6 +34,7 @@ nav {
   text-decoration: none;
   margin-right: 20px;
 }
+
 nav a {
   text-decoration: none;
   margin: 15px 30px;
@@ -48,7 +48,7 @@ h1 {
 }
 
 .img-arow {
-  margin: 110px 650px 10px;
+  margin: 70px 650px 10px;
 }
 
 .btn-contact {
@@ -71,12 +71,14 @@ h1 {
   grid-template-columns: 50% 50%;
   margin-bottom: -3px;
 }
+
 .container-secao .secao {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .container-secao .secao h2 {
   width: 35%;
   margin-bottom: 15px;
@@ -84,10 +86,12 @@ h1 {
   font-weight: 700;
   font-family: "Fraunces", sans-serif;
 }
+
 .container-secao .secao p {
   width: 60%;
   margin-bottom: 15px;
 }
+
 .container-secao .secao a {
   justify-items: flex-start;
   width: 60%;
@@ -96,14 +100,17 @@ h1 {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
 }
+
 .container-secao img {
   width: 100%;
 }
+
 .container-secao .learn-secao1:hover {
   text-decoration-style: bold;
   text-decoration-line: underline;
   text-decoration-color: hsl(51, 100%, 49%);
 }
+
 .container-secao .learn-secao2:hover {
   text-decoration-style: bold;
   text-decoration-line: underline;
@@ -120,9 +127,11 @@ h1 {
   align-items: center;
   transform: translate(200px, -200px);
 }
+
 .container-text h3 {
   margin-bottom: 10px;
 }
+
 .container-text p {
   text-align: center;
 }
@@ -133,11 +142,13 @@ h1 {
   align-items: center;
   margin-bottom: 30px;
 }
+
 .container-client h3 {
   text-align: center;
   color: hsl(210, 4%, 67%);
   letter-spacing: 5px;
 }
+
 .container-client p {
   margin-bottom: 50px;
   color: hsl(213, 9%, 39%);
@@ -163,6 +174,7 @@ h1 {
   align-items: center;
   text-align: center;
 }
+
 .card-client small {
   color: hsl(210, 4%, 67%);
   margin-top: 10px;
@@ -173,6 +185,7 @@ h1 {
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
+
 .container-imagens img {
   width: 100%;
 }
@@ -184,23 +197,29 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 footer img {
   margin: 30px auto;
 }
+
 footer .nav-footer {
   display: flex;
 }
+
 footer .nav-footer a {
   color: hsl(210, 4%, 67%);
 }
+
 footer .nav-footer a:hover {
   color: hsl(0, 0%, 100%);
 }
+
 footer .container-redes-sociais i,
 footer svg,
 footer path {
   margin: 30px 5px;
 }
+
 footer .container-redes-sociais i i,
 footer .container-redes-sociais i svg,
 footer .container-redes-sociais i path:hover,
