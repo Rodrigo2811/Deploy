@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: var(--BackGround-color-prymari-dark-blue);
+  font-family: var(--font-family-primary);
+}
+
+@media screen and (max-width: 476px) {
+
+  .sub-container-card {
+    grid-template-columns: auto;
+    margin: 20px auto;
+    gap: 0;
+  }
+
+  .container-section h1 {
+    width: 100%;
+  }
+
+  .container-section p {
+    width: 100%;
+  }
+
+  .container-cards-coments {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .container-footer {
+    display: grid;
+    height: auto;
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+
+  .container-pages {
+    display: flex;
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  .redes-sociais {
+
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .container-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-coment-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    margin: 20px auto;
+  }
+
+  .containerComent {
+    margin: 20px auto;
+  }
+
+  .descripton-productive {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .descripton-productive p {
+    width: 100%;
+  }
+
+  .imgCentral {
+    width: 100%;
+  }
+
+  nav ul {
+    font-size: 12px;
+  }
+
+
+  .sub-container-coment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-form {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 10px 50px;
+    height: 320px;
+  }
+
+
+  .container-coment-img img {
+    width: 100%;
+  }
+
+  .container-form input {
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .btn-startedFree {
+    width: 100%;
+  }
+}
