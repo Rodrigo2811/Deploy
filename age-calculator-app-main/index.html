@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>Age calculator app</title>
+
+</head>
+
+<body>
+
+  <section class="container">
+    <form>
+      <div class="container-imput">
+        <label class="labelDia">Day</label><br>
+        <input type="text" placeholder="DD" id="impDias"><br>
+        <span class="msg-error">The field is required</span>
+      </div>
+      <div class="container-imput">
+        <label class="labelMes">Month</label><br>
+        <input type="text" placeholder="MM" id="impMes"><br>
+        <span class="msg-error">The field is required</span>
+      </div>
+      <div class="container-imput">
+        <label class="labelAnos">years</label><br>
+        <input type="text" placeholder="YYYY" id="impAnos"><br>
+        <span class="msg-error">The field is required</span>
+      </div>
+
+      <button class="btn-calc" type="submit"><img src="/assets/images/icon-arrow.svg" alt="botao"></button>
+    </form>
+
+    <div class="container-result">
+
+      <p><span id="anos" class="anos">__</span>years</p>
+      <p><span id="mes" class="mes">__</span>Month</p>
+      <p><span id="dias" class="dias">__</span>days</p>
+    </div>
+
+  </section>
+
+  </div>
+
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
