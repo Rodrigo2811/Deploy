@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+
+    --primary-color-Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+
+    --neutral-color-Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --neutral-color-Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --neutral-color-Grayish-Blue: hsl(233, 13%, 49%);
+    --neutral-color-Dark-Grayish-Blue: hsl(232, 13%, 33%);
+    --font-family: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--neutral-color-Very-Light-Grayish-Blue);
+    height: 100vh;
+    font-family: var(--font-family);
+
+}
+
+.imgTop {
+    float: right;
+    height: 500px;
+    z-index: 0;
+    position: relative;
+
+}
+
+.containerImp {
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: inline-flex;
+    padding: 5px;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+
+.btnPlano {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    margin: -5px auto;
+    border: none;
+    background-color: var(--neutral-color-Very-Light-Grayish-Blue);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.mensal {
+    transform: translate(70%, 0);
+    transition: .3s ease-in-out;
+}
+
+.anual {
+    transform: translate(-70%, 0);
+    transition: .3s ease-in-out;
+}
+
+.fundo {
+    background-image: linear-gradient(hsl(234, 20%, 80%), hsl(233, 5%, 67%));
+    transition: .3s ease-in-out;
+}
+
+.imgBottom {
+    height: 300px;
+    z-index: 0;
+    position: absolute;
+    transform: translate(0, 50vh);
+}
+
+.container-opcao {
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.container-planos {
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    margin-top: 180px;
+
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.card h2 {
+    font-size: 32px;
+}
+
+.card1,
+.card3 {
+    background-color: var(--neutral-color-Very-Light-Grayish-Blue);
+}
+
+.card2 {
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    height: 390px;
+    margin: -20px 0;
+}
+
+.card p {
+    border-bottom: 1px solid black;
+    margin: 10px auto;
+}
+
+.btn-learn {
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    transition: .5s ease-in;
+}
+
+.card2 .btn-learn {
+    background-color: var(--neutral-color-Very-Light-Grayish-Blue);
+    transition: .5s ease-in;
+
+}
+
+.card1 .btn-learn {
+    background-color: hsl(237, 63%, 64%);
+    transition: .5s ease-in-out;
+
+
+}
+
+.card3 .btn-learn {
+    background-color: hsl(237, 63%, 64%);
+    transition: all .5s ease-in-out;
+
+}
+
+.btn-learn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--neutral-color-Grayish-Blue);
+}
+
+.card1 .btn-learn:hover {
+    background-color: hsl(0, 100%, 100%);
+    border: 1px solid grey;
+
+}
+
+.card3 .btn-learn:hover {
+    background-color: hsl(0, 100%, 100%);
+    border: 1px solid grey;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .imgBottom {
+        height: 470px;
+        z-index: 0;
+        position: absolute;
+        transform: translate(0, 50vh);
+    }
+}
+
+
+@media screen and (max-width: 475px) {
+    body {
+        height: 100vh;
+    }
+
+    .container-planos {
+        display: grid;
+        gap: 35px;
+
+    }
+
+    .imgBottom {
+        display: none;
+
+    }
+
+    .card {
+        width: 270px;
+        height: 350px;
+    }
+
+    .card3 {
+        margin: 0 auto 20px auto;
+    }
+
+}
